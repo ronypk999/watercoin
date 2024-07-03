@@ -13,3 +13,6 @@
 .nav {
   transition: all 0.5s;
 }
+.shadow-water {
+  box-shadow: rgb(0, 0, 0) 0px -5px 0px 0px inset;
+}
