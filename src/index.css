@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Rubik", sans-serif;
+}
+@media (min-width: 768px) {
+  .bg-md-none {
+    background-image: none !important;
+  }
+}
+.nav {
+  transition: all 0.5s;
+}
