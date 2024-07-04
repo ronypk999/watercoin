@@ -9,7 +9,7 @@ import sol from "../assets/buy/sol-icon.webp";
 const Buy: React.FC = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row gap-6 py-12 px-6 ">
+      <div className="shadow-buy bg-[#f5fafb] flex flex-col md:flex-row gap-6 py-12 px-6 ">
         <div className="flex-1">
           <div className="bg-[#98d5fb] text-center p-6 rounded-lg border-2 border-black">
             <img src={dex} className="mx-auto py-12" />
