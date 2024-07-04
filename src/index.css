@@ -88,3 +88,12 @@
     right: 20% !important;
   }
 }
+.breakdown-text-shadow {
+  text-shadow: rgb(55, 94, 139) 3px 5px 0px;
+}
+.base-color {
+  color: #2a4c75;
+}
+.base-color-water {
+  color: #58b7e7;
+}

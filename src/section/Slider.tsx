@@ -10,11 +10,11 @@ const Slider: React.FC = () => {
     <>
       <div className="py-12">
         <div>
-          <h1 className="text-xl text-[#2A4C75] sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
-            BECOME A <span className="text-[#58b7e7]">$WATER</span> HOLDER{" "}
+          <h1 className="text-xl base-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
+            BECOME A <span className="base-color-water">$WATER</span> HOLDER{" "}
             <br />– WIN HUGE PRIZES
           </h1>
-          <p className="text-[#58b7e7] text-center font-bold text-xl py-6">
+          <p className="base-color text-center font-bold text-xl py-6">
             And so much more coming soon
           </p>
         </div>

@@ -3,6 +3,8 @@ import Banner from "../section/Banner";
 import Buy from "../section/Buy";
 import Feature from "../section/Feature";
 import Slider from "../section/Slider";
+import RoadNomics from "../section/RoadNomics";
+import Supply from "../section/Supply";
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +14,8 @@ const Home: React.FC = () => {
         <Buy></Buy>
         <Feature></Feature>
         <Slider></Slider>
+        <RoadNomics></RoadNomics>
+        <Supply></Supply>
       </div>
     </>
   );
