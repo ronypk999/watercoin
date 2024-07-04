@@ -5,6 +5,8 @@ import Feature from "../section/Feature";
 import Slider from "../section/Slider";
 import RoadNomics from "../section/RoadNomics";
 import Supply from "../section/Supply";
+import More from "../section/More";
+import Product from "../section/Product";
 
 const Home: React.FC = () => {
   return (
@@ -16,6 +18,8 @@ const Home: React.FC = () => {
         <Slider></Slider>
         <RoadNomics></RoadNomics>
         <Supply></Supply>
+        <More></More>
+        <Product></Product>
       </div>
     </>
   );

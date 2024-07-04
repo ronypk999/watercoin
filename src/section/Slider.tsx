@@ -9,7 +9,7 @@ const Slider: React.FC = () => {
   return (
     <>
       <div className="py-12">
-        <div>
+        <div className="px-3">
           <h1 className="text-xl base-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
             BECOME A <span className="base-color-water">$WATER</span> HOLDER{" "}
             <br />– WIN HUGE PRIZES

@@ -97,3 +97,6 @@
 .base-color-water {
   color: #58b7e7;
 }
+.product-shadow {
+  box-shadow: rgb(0, 0, 0) 0px -5px 0px 0px inset;
+}

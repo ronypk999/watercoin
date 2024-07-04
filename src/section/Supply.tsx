@@ -14,7 +14,7 @@ const Supply: React.FC = () => {
   return (
     <>
       <div className="pt-48 md:pt-32">
-        <div>
+        <div className="px-3">
           <h1 className="text-xl base-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
             Supply Dynamics: <br />
             <span className="base-color-water">The States of Water</span>
