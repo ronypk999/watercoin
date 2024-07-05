@@ -7,6 +7,7 @@ import RoadNomics from "../section/RoadNomics";
 import Supply from "../section/Supply";
 import More from "../section/More";
 import Product from "../section/Product";
+import Contact from "../section/Contact";
 
 const Home: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
         <Supply></Supply>
         <More></More>
         <Product></Product>
+        <Contact></Contact>
       </div>
     </>
   );

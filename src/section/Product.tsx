@@ -8,7 +8,7 @@ const Product: React.FC = () => {
     <>
       <div className="py-12">
         <div className="px-3">
-          <h1 className="text-xlbase-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
+          <h1 className="text-xl base-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
             $Water Future Products
           </h1>
           <p className="base-color text-center max-w-xl mx-auto text-xl py-6">

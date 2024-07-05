@@ -39,101 +39,103 @@ const Header: React.FC = () => {
 
       <div
         ref={stickyElement}
-        className="max-w-[1600px] mx-6 md:mx-auto sticky top-12 mb-[-85px] mt-[-10px] flex items-center gap-12
-     z-10 nav shadow-nav bg-white py-6 rounded-[20px] text-[#2a4c75] md:text-black md:px-6"
+        className="max-w-[1600px] mx-3 lg:mx-auto sticky top-12 mb-[-85px] mt-[-11px] 
+     z-10 nav    text-[#2a4c75] md:text-black md:px-6"
       >
-        <div className="flex px-3 justify-between items-center w-full md:w-fit">
-          <div className="">
-            <img src={logo} className="w-48" />
-          </div>
-          <div className="md:hidden">
-            <div onClick={menuHandle} className="text-3xl">
-              <img src={menu} />
+        <div className="bg-white py-3 md:py-6 px-3 shadow-nav rounded-[20px] flex items-center gap-12">
+          <div className="flex px-3 justify-between items-center w-full md:w-fit">
+            <div className="">
+              <img src={logo} className="w-48" />
+            </div>
+            <div className="md:hidden">
+              <div onClick={menuHandle} className="text-3xl">
+                <img src={menu} />
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className={`${hide ? "-right-[100rem]" : "-right-6"} ${
-            hide2 && "hidden"
-          } absolute h-screen w-screen nav md:h-fit p-3 space-y-12 md:space-y-0 md:p-0 top-0 bottom-0 md:static md:flex items-center w-full justify-around lg:justify-between lg:px-6 font-medium bg-md-none`}
-          onClick={(e) => {
-            e.stopPropagation();
-          }}
-          style={{
-            backgroundImage: `url(${bg})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        >
-          <div className="md:hidden">
-            <div onClick={menuHandle} className="text-3xl flex justify-end">
-              <img src={menuClose} />
+          <div
+            className={`${hide ? "-right-[100rem]" : "-right-3"} ${
+              hide2 && "hidden"
+            } absolute h-screen w-screen nav md:h-fit p-3 space-y-12 md:space-y-0 md:p-0 -top-16 bottom-0 md:static md:flex items-center w-full justify-around lg:justify-between lg:px-6 font-medium bg-md-none`}
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+            style={{
+              backgroundImage: `url(${bg})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="md:hidden">
+              <div onClick={menuHandle} className="text-3xl flex justify-end">
+                <img src={menuClose} />
+              </div>
             </div>
-          </div>
-          <div className="hidden md:flex flex-col md:flex-row items-start text-2xl gap-6">
-            <button className="uppercase" onClick={() => {}}>
-              Features
-            </button>
-            <button className="uppercase" onClick={() => {}}>
-              Utility
-            </button>
-            <button className="uppercase" onClick={() => {}}>
-              Roadmap
-            </button>
-            <button className="uppercase" onClick={() => {}}>
-              Faq
-            </button>
-          </div>
-          <div className="md:hidden flex flex-col md:flex-row items-start text-2xl gap-6 uppercase">
-            <button
-              className="uppercase"
-              onClick={() => {
-                menuHandle();
-              }}
-            >
-              Features
-            </button>
-            <button
-              className="uppercase"
-              onClick={() => {
-                menuHandle();
-              }}
-            >
-              Utility
-            </button>
-            <button
-              className="uppercase"
-              onClick={() => {
-                menuHandle();
-              }}
-            >
-              Roadmap
-            </button>
-            <button
-              className="uppercase"
-              onClick={() => {
-                menuHandle();
-              }}
-            >
-              Faq
-            </button>
-          </div>
+            <div className="hidden md:flex flex-col md:flex-row items-start text-2xl gap-6">
+              <button className="uppercase" onClick={() => {}}>
+                Features
+              </button>
+              <button className="uppercase" onClick={() => {}}>
+                Utility
+              </button>
+              <button className="uppercase" onClick={() => {}}>
+                Roadmap
+              </button>
+              <button className="uppercase" onClick={() => {}}>
+                Faq
+              </button>
+            </div>
+            <div className="md:hidden flex flex-col md:flex-row items-start text-2xl gap-6 uppercase">
+              <button
+                className="uppercase"
+                onClick={() => {
+                  menuHandle();
+                }}
+              >
+                Features
+              </button>
+              <button
+                className="uppercase"
+                onClick={() => {
+                  menuHandle();
+                }}
+              >
+                Utility
+              </button>
+              <button
+                className="uppercase"
+                onClick={() => {
+                  menuHandle();
+                }}
+              >
+                Roadmap
+              </button>
+              <button
+                className="uppercase"
+                onClick={() => {
+                  menuHandle();
+                }}
+              >
+                Faq
+              </button>
+            </div>
 
-          <div className="flex flex-col md:flex-row gap-3">
-            <button
-              onClick={() => {}}
-              className="hidden bg-[#f96d6d] md:block btn text-base px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
-            >
-              Pre-sale
-            </button>
-            <button
-              onClick={() => {
-                menuHandle();
-              }}
-              className="md:hidden bg-green-600 btn text-base px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
-            >
-              Pre-sale
-            </button>
+            <div className="flex flex-col md:flex-row gap-3">
+              <button
+                onClick={() => {}}
+                className="hidden bg-[#f96d6d] md:block btn text-base px-6 lg:px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
+              >
+                Pre-sale
+              </button>
+              <button
+                onClick={() => {
+                  menuHandle();
+                }}
+                className="md:hidden bg-green-600 btn text-base px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
+              >
+                Pre-sale
+              </button>
+            </div>
           </div>
         </div>
       </div>
