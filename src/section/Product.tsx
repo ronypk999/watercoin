@@ -1,20 +1,16 @@
 import React from "react";
-import product1 from "../assets/product/1.webp";
-import product2 from "../assets/product/2.webp";
-import product3 from "../assets/product/3.webp";
+import product1 from "../assets/product/ornage_wave.png";
+import product2 from "../assets/product/ornage_nft.png";
+import product3 from "../assets/product/orange_antioxi.png";
 
 const Product: React.FC = () => {
   return (
     <>
       <div className="py-12">
-        <div className="px-3">
+        <div className="px-3 py-12">
           <h1 className="text-xl base-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
-            $Water Future Products
+            <span className="text-orange-400">$JUICE </span>FUTURE PRODUCTS
           </h1>
-          <p className="base-color text-center max-w-xl mx-auto text-xl py-6">
-            $WATER introduces a unique and engaging game mechanic inspired by
-            the states of water—staking (icing) and burning (vaporizing).
-          </p>
         </div>
         <div className="flex flex-col md:flex-row justify-around gap-6 px-3 md:px-6">
           <div className="flex-1 card product-shadow border-2 border-black">
@@ -23,13 +19,14 @@ const Product: React.FC = () => {
             </figure>
             <div className="card-body p-3">
               <h2 className="card-title text-center  text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
-                Global Water Initiatives
+                Orange Wave Revolution
               </h2>
               <p className="font-medium">
-                The struggle for clear water never ends, especially with global
-                warming. We aim for sustainable projects that prevent
-                deforestation and help with Water Distribution in the dryest
-                parts of Africa!
+                Efforts for a healthy life are constantly evolving. This is
+                especially true due to the stress of modern society and
+                unbalanced lifestyle habits. We aim for sustainable projects
+                that provide nutrition education worldwide, support exercise
+                facilities, and expand mental health programs!
               </p>
               <button className="btn my-6 product-shadow py-3 px-6 mx-auto w-fit bg-transparent uppercase border-4 border-black">
                 coming soon
@@ -42,12 +39,14 @@ const Product: React.FC = () => {
             </figure>
             <div className="card-body p-3">
               <h2 className="card-title text-center  text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
-                DONATE $WATER NFT Series
+                $JUICE Health Tracker NFT Series
               </h2>
               <p className="font-medium">
-                The $WATER NFT Series is a way to be a charitable person and
-                have a chance to earn even more than you donated! Being a great
-                person should be rewarded!
+                The $JUICE Health Tracker NFT series is an innovative way to
+                practice healthy living while earning profits! It rewards people
+                with healthy habits. This NFT tracks users' exercise, nutrition
+                intake, sleep patterns, and provides additional $JUICE tokens as
+                rewards for achieving health goals.
               </p>
               <button className="btn my-6 product-shadow py-3 px-6 mx-auto w-fit bg-transparent uppercase border-4 border-black">
                 coming soon
@@ -60,12 +59,15 @@ const Product: React.FC = () => {
             </figure>
             <div className="card-body p-3">
               <h2 className="card-title text-center  text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
-                FREEZING AND VAPORIZING $WATER
+                $JUICE's Oxidation Prevention and Free Radical Removal
               </h2>
               <p className="font-medium">
-                $WATER introduces a unique and engaging game mechanic inspired
-                by the states of water—Freezing (Unique staking system) and
-                Vaporizing (Regular burning events with charity and rewards).
+                $JUICE introduces a token mechanism inspired by the body's
+                nutrient absorption process. 'Oxidation Prevention' (a unique
+                staking system that provides additional benefits to long-term
+                holders) and 'Free Radical Removal' (regular token burning
+                events that maintain the health of the entire ecosystem and
+                provide additional rewards to holders) are part of this.
               </p>
               <button className="btn my-6 product-shadow py-3 px-6 mx-auto w-fit bg-transparent uppercase border-4 border-black">
                 coming soon
