@@ -44,11 +44,11 @@ const Slider: React.FC = () => {
             }}
           >
             <SwiperSlide>
-              <div className="card">
+              <div className="">
                 <figure className="pb-3">
                   <img src={image1} alt="Shoes" className="rounded-xl" />
                 </figure>
-                <div className="card-body p-6 bg-base-200">
+                <div className="p-6 bg-base-200 h-[275px] space-y-6 overflow-hidden">
                   <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
                     <span> Lifetime Health </span>
                     <span className="slider-text-shadow text-orange-400">
@@ -65,66 +65,59 @@ const Slider: React.FC = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="card">
-                <figure className="pb-3">
-                  <img src={image2} alt="Shoes" className="rounded-xl" />
-                </figure>
-                <div className="card-body p-6 bg-base-200">
-                  <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
-                    <span>Premium </span>
-                    <span className="slider-text-shadow text-orange-400">
-                      Massage Chair
-                    </span>
-                  </h2>
-                  <p>
-                    Provides a high-end massage chair with cutting-edge
-                    technology. This massage chair helps relieve stress and
-                    relax muscles, contributing to the overall well-being of
-                    holders.
-                  </p>
-                </div>
+              <figure className="pb-3">
+                <img src={image2} alt="Shoes" className="rounded-xl" />
+              </figure>
+              <div className="p-6 bg-base-200 h-[275px] space-y-6 overflow-hidden">
+                <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
+                  <span>Premium </span>
+                  <span className="slider-text-shadow text-orange-400">
+                    Massage Chair
+                  </span>
+                </h2>
+                <p>
+                  Provides a high-end massage chair with cutting-edge
+                  technology. This massage chair helps relieve stress and relax
+                  muscles, contributing to the overall well-being of holders.
+                </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="card">
-                <figure className="pb-3">
-                  <img src={image3} alt="Shoes" className="rounded-xl" />
-                </figure>
-                <div className="card-body p-6 bg-base-200">
-                  <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
-                    <span> Del Monte Lifetime </span>
-                    <span className="slider-text-shadow text-orange-400">
-                      Free Voucher
-                    </span>
-                  </h2>
-                  <p>
-                    Provides a voucher for lifetime free use of Del Monte
-                    products. Through this, holders can enjoy high-quality
-                    orange juice for free for life.
-                  </p>
-                </div>
+              <figure className="pb-3">
+                <img src={image3} alt="Shoes" className="rounded-xl" />
+              </figure>
+              <div className="p-6 bg-base-200 h-[275px] space-y-6 overflow-hidden">
+                <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
+                  <span> Del Monte Lifetime </span>
+                  <span className="slider-text-shadow text-orange-400">
+                    Free Voucher
+                  </span>
+                </h2>
+                <p>
+                  Provides a voucher for lifetime free use of Del Monte
+                  products. Through this, holders can enjoy high-quality orange
+                  juice for free for life.
+                </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="card">
-                <figure className="pb-3">
-                  <img src={image4} alt="Shoes" className="rounded-xl" />
-                </figure>
-                <div className="card-body p-6 bg-base-200">
-                  <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
-                    <span> Vitamin Lifetime </span>
-                    <span className="slider-text-shadow text-orange-400">
-                      Free Voucher
-                    </span>
-                  </h2>
-                  <p>
-                    As part of the ecosystem's health management program,
-                    holders are regularly provided with customized comprehensive
-                    vitamin sets. Adjusted according to individual health
-                    conditions and needs, these vitamin sets support the
-                    long-term health promotion of holders.
-                  </p>
-                </div>
+              <figure className="pb-3">
+                <img src={image4} alt="Shoes" className="rounded-xl" />
+              </figure>
+              <div className="p-6 bg-base-200 h-[275px] space-y-6 overflow-hidden">
+                <h2 className="text-xl md:text-3xl text-[#2a4c75] uppercase font-bold">
+                  <span> Vitamin Lifetime </span>
+                  <span className="slider-text-shadow text-orange-400">
+                    Free Voucher
+                  </span>
+                </h2>
+                <p>
+                  As part of the ecosystem's health management program, holders
+                  are regularly provided with customized comprehensive vitamin
+                  sets. Adjusted according to individual health conditions and
+                  needs, these vitamin sets support the long-term health
+                  promotion of holders.
+                </p>
               </div>
             </SwiperSlide>
           </Swiper>
