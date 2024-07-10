@@ -6,9 +6,12 @@ const More: React.FC = () => {
   const { healthRef } = useInfoContext();
   return (
     <>
-      <div ref={healthRef} className="py-12 shadow-buy rounded-box">
+      <div className="py-12 shadow-buy rounded-box">
         <div className="px-3">
-          <h1 className="text-xl max-w-lg mx-auto base-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
+          <h1
+            ref={healthRef}
+            className="text-xl max-w-lg mx-auto base-color sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center"
+          >
             A Lifelong Health Journey with{" "}
             <span className="text-orange-400">$JUICE</span>
           </h1>

@@ -1,31 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 import desk from "../assets/banner/bg-desk.png";
 import title from "../assets/banner/main_title.png";
 import glass from "../assets/banner/juice_glass.png";
-// import sol from "../assets/solana.png";
-// import badge from "../assets/banner/badge.svg";
+import { useInfoContext } from "../hook/ContextHook";
 
 const Banner: React.FC = () => {
-  // const [copySuccess, setCopySuccess] = useState<string>("Copy");
-  // const [copyText] = useState<string>(
-  //   "B6h248NJkAcBAkaCnji889a26tCiGXGN8cxhEJ4dX391d"
-  // );
+  const { buyRef } = useInfoContext();
+  const [copySuccess, setCopySuccess] = useState<string>("Copy");
+  const [copyText] = useState<string>(
+    "B6h248NJkAcBAkaCnji889a26tCiGXGN8cxhEJ4dX391d"
+  );
 
-  // const copyToClipboard = () => {
-  //   navigator.clipboard
-  //     .writeText(copyText)
-  //     .then(() => {
-  //       setCopySuccess("Copied!");
-  //       setTimeout(() => {
-  //         setCopySuccess("Copy");
-  //       }, 5000);
-  //     })
-  //     .catch((err) => {
-  //       setCopySuccess("Error!");
-  //       console.error("Failed to copy: ", err);
-  //     });
-  // };
+  const copyToClipboard = () => {
+    navigator.clipboard
+      .writeText(copyText)
+      .then(() => {
+        setCopySuccess("Copied!");
+        setTimeout(() => {
+          setCopySuccess("Copy");
+        }, 5000);
+      })
+      .catch((err) => {
+        setCopySuccess("Error!");
+        console.error("Failed to copy: ", err);
+      });
+  };
 
   return (
     <>
@@ -50,24 +50,29 @@ const Banner: React.FC = () => {
             alt="Glass"
           />
         </div>
-        {/* <img src={badge} className="absolute left-3 -bottom-12" alt="Badge" /> */}
       </div>
-      {/* <div className="py-12">
+      <div ref={buyRef} className="pt-6 pb-12 px-3 md:px-6">
         <div
-          className="flex flex-col md:flex-row items-center justify-center gap-6 bg-yellow-500 p-3"
+          className="flex flex-col md:flex-row items-center justify-center gap-6 bg-[#F9C06B] p-3 rounded-box md:rounded-[40px]"
           onClick={copyToClipboard}
         >
-          <div className=" md:text-2xl lg:text-4xl flex flex-col md:flex-row items-center justify-center gap-3">
-            <span className="text-2xl md:text-4xl flex items-center gap-2 uppercase">
-              <img src={sol} className="w-8 md:w-12" /> Contract:
+          <div className="md:text-2xl lg:text-4xl flex flex-col items-center justify-center gap-3 text-[#45356F] ">
+            <span className="text-white text-xl md:text-2xl lg:text-4xl">
+              Send Sol to the address below
             </span>
-            <span className="flex-1 break-all"> {copyText}</span>
+            <span className="flex-1 break-all bg-[#F49F13] px-3 py-2 rounded-box">
+              {" "}
+              {copyText}
+            </span>
+            <p className="text-xs sm:text-sm md:text-xl">
+              Note : Only send SOL(min 0.1 , max 100 SOL) from a solana wallet
+            </p>
           </div>
-          <button className="btn text-xl md:text-2xl rounded-full bg-blue-500 px-6 text-white hover:bg-blue-400">
+          <button className="btn text-xl md:text-2xl rounded-full bg-[#88ABDA] border-4 border-[#112594] px-6 text-[#112594] hover:bg-blue-400">
             {copySuccess}
           </button>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

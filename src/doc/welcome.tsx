@@ -85,9 +85,9 @@ const Welcome: React.FC = () => {
           </Scrollspy>
         </div>
         <div className="max-w-4xl mx-auto px-3 space-y-12 flex-1">
-          <div ref={section1Ref} className="space-y-6">
+          <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="font-bold text-3xl">
+              <h2 ref={section1Ref} className="font-bold text-3xl">
                 1 Introduction to $JUICE: Squeezing the Orange
               </h2>
               <h3 className="font-bold text-xl">
@@ -124,9 +124,9 @@ const Welcome: React.FC = () => {
               </p>
             </div>
           </div>
-          <div ref={section2Ref} className="space-y-6">
+          <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="font-bold text-3xl">
+              <h2 ref={section2Ref} className="font-bold text-3xl">
                 2 $JUICE Sale Details: Freshly Squeezed Tokenomics
               </h2>
               <h3 className="font-bold text-xl">
@@ -180,9 +180,9 @@ const Welcome: React.FC = () => {
               </p>
             </div> */}
           </div>
-          <div ref={section3Ref} className="space-y-6">
+          <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="font-bold text-3xl">
+              <h2 ref={section3Ref} className="font-bold text-3xl">
                 3 Benefits of $JUICE: A Revolution in a Glass of Juice
               </h2>
               <h3 className="font-bold text-xl">
@@ -242,9 +242,9 @@ const Welcome: React.FC = () => {
               </p>
             </div>
           </div>
-          <div ref={section4Ref} className="space-y-6">
+          <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="font-bold text-3xl">
+              <h2 ref={section4Ref} className="font-bold text-3xl">
                 4 $JUICE Roadmap: Orange Tree Growth Stages
               </h2>
               <h3 className="font-bold text-xl">
@@ -288,9 +288,9 @@ const Welcome: React.FC = () => {
               </p>
             </div>
           </div>
-          <div ref={section5Ref} className="space-y-6">
+          <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="font-bold text-3xl">
+              <h2 ref={section5Ref} className="font-bold text-3xl">
                 5 Conclusion: Get Rich with Vitamins, Energize with Health
               </h2>
               <div>

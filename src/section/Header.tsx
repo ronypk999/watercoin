@@ -8,8 +8,15 @@ import menuClose from "../assets/menu-close.svg";
 import { useInfoContext } from "../hook/ContextHook";
 
 const Header: React.FC = () => {
-  const { scrollToFeature, scrollToHealth, scrollToWhitepaper } =
-    useInfoContext();
+  const {
+    scrollToFeature,
+    scrollToHealth,
+    scrollToTop,
+    scrollToWhitepaper,
+    scrollToBuy,
+    roadMapRef,
+    scrollTo,
+  } = useInfoContext();
   const [hide, setHide] = useState(true);
   const [hide2, setHide2] = useState(true);
 
@@ -31,7 +38,7 @@ const Header: React.FC = () => {
   };
   return (
     <>
-      <div className="hidden">
+      <div className="">
         <Marquee autoFill={true} className="py-6 bg-[#2a4c75]">
           <span className="mr-3 uppercase font-bold text-white">
             VITAMINIZE & ENERGIZE
@@ -43,14 +50,18 @@ const Header: React.FC = () => {
       <div
         ref={stickyElement}
         className="max-w-[1600px] mx-3 lg:mx-auto sticky top-12 mb-[-85px] mt-[-11px] 
-     z-10 nav    text-[#2a4c75] md:text-black md:px-6"
+     z-10 nav    text-[#2a4c75] lg:text-black lg:px-6"
       >
-        <div className="bg-white py-3 md:py-6 px-3 shadow-nav rounded-[20px] flex items-center gap-12">
-          <div className="flex px-3 justify-between items-center w-full md:w-fit">
+        <div className="bg-white py-3 lg:py-6 px-3 shadow-nav rounded-[20px] flex items-center gap-12">
+          <div className="flex px-3 justify-between items-center w-full lg:w-fit">
             <div className="">
-              <img src={logo} className="w-40 md:hidden" />
+              <img
+                src={logo}
+                onClick={scrollToTop}
+                className="w-40 lg:w-64 cursor-pointer"
+              />
             </div>
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <div onClick={menuHandle} className="text-3xl">
                 <img src={menu} />
               </div>
@@ -59,31 +70,36 @@ const Header: React.FC = () => {
           <div
             className={`${hide ? "-right-[100rem]" : "-right-3"} ${
               hide2 && "hidden"
-            } absolute bg-white h-screen w-screen nav md:h-fit p-3 space-y-12 md:space-y-0 md:p-0 -top-12 bottom-0 md:static md:flex items-center w-full justify-around lg:justify-between lg:px-6 font-medium bg-md-none`}
+            } absolute bg-white h-screen w-screen nav lg:h-fit p-3 space-y-12 lg:space-y-0 lg:p-0 -top-12 bottom-0 lg:static lg:flex items-center w-full justify-around lg:justify-between lg:px-6 font-medium bg-md-none`}
             onClick={(e) => {
               e.stopPropagation();
             }}
           >
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <div onClick={menuHandle} className="text-3xl flex justify-end">
                 <img src={menuClose} />
               </div>
             </div>
-            <div className="hidden md:flex flex-col md:flex-row items-start text-2xl gap-6 w-full justify-center">
+            <div className="hidden lg:flex flex-col lg:flex-row items-start text-2xl gap-6 w-full justify-center">
               <button className="uppercase" onClick={scrollToFeature}>
                 Features
               </button>
               <button className="uppercase" onClick={scrollToHealth}>
                 Healthcare Foundation
               </button>
-              {/* <button className="uppercase" onClick={() => {}}>
+              <button
+                className="uppercase"
+                onClick={() => {
+                  scrollTo(roadMapRef);
+                }}
+              >
                 Roadmap
-              </button> */}
+              </button>
               <button className="uppercase" onClick={scrollToWhitepaper}>
                 WhitePaper
               </button>
             </div>
-            <div className="md:hidden flex flex-col md:flex-row items-start text-2xl gap-6 uppercase">
+            <div className="lg:hidden flex flex-col lg:flex-row items-start text-2xl gap-6 uppercase">
               <button
                 className="uppercase"
                 onClick={() => {
@@ -102,14 +118,15 @@ const Header: React.FC = () => {
               >
                 Healthcare Foundation
               </button>
-              {/* <button
+              <button
                 className="uppercase"
                 onClick={() => {
-                  navigate("whitepaper");
+                  menuHandle();
+                  scrollTo(roadMapRef);
                 }}
               >
                 Roadmap
-              </button> */}
+              </button>
               <button
                 className="uppercase"
                 onClick={() => {
@@ -121,22 +138,23 @@ const Header: React.FC = () => {
               </button>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-3">
-              <img src={logo} className="w-40 mx-auto" />
-              {/* <button
-                onClick={() => {}}
-                className="hidden bg-[#f96d6d] md:block btn text-base px-6 lg:px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
+            <div className="flex flex-col lg:flex-row gap-3 px-6">
+              {/* <img src={logo} className="w-40 mx-auto" /> */}
+              <button
+                onClick={scrollToBuy}
+                className="hidden bg-[#f96d6d] lg:block btn text-base px-6 lg:px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
               >
                 Pre-sale
               </button>
               <button
                 onClick={() => {
                   menuHandle();
+                  scrollToBuy();
                 }}
-                className="md:hidden bg-green-600 btn text-base px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
+                className="lg:hidden bg-green-600 btn text-base px-12 border-2 border-black rounded-lg text-xl text-white py-2 uppercase"
               >
                 Pre-sale
-              </button> */}
+              </button>
             </div>
           </div>
         </div>

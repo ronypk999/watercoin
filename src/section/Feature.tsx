@@ -16,7 +16,7 @@ const Feature: React.FC = () => {
   const { featureRef } = useInfoContext();
   return (
     <>
-      <div ref={featureRef} className="p-12 max-w-[1400px] mx-auto">
+      <div className="p-12 max-w-[1400px] mx-auto">
         {/* <div className="flex flex-col md:flex-row justify-between items-center gap-12 md:mb-12 lg:-mb-12">
           <p
             style={{
@@ -44,7 +44,9 @@ const Feature: React.FC = () => {
           <div className="flex justify-center gap-3">
             <img src={orange} className="w-12 md:w-20" />
             <div className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-center">
-              <h1 className="text-[#2A4C75]">Key Features:</h1>
+              <h1 ref={featureRef} className="text-[#2A4C75]">
+                Key Features:
+              </h1>
               <h1 className="text-orange-400">$Juice coin</h1>
             </div>
             <img src={orange} className="w-12 md:w-20" />
