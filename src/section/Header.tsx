@@ -38,12 +38,12 @@ const Header: React.FC = () => {
   };
   return (
     <>
-      <div className="">
-        <Marquee autoFill={true} className="py-6 bg-[#2a4c75]">
+      <div className="relative z-10 bg-[#2a4c75] py-2 md:pb-4 pt-2">
+        <Marquee autoFill={true}>
           <span className="mr-3 uppercase font-bold text-white">
             VITAMINIZE & ENERGIZE
           </span>
-          <img src={favicon} className="w-12" />
+          <img src={favicon} className="w-6 md:w-8 mr-3" />
         </Marquee>
       </div>
 
